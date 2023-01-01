@@ -39,7 +39,7 @@
             </div>
 
             <div class="mt-10 flex flex-col sm:flex-row sm:items-center">
-                <p class="text-3xl text-gray-900 mr-4">
+                <p class="text-3xl text-gray-900 ltr:mr-4 rtl:ml-4">
                     {{ selectedVariant?.priceWithTax | formatPrice }}
                 </p>
                 <div class="flex sm:flex-col1 align-baseline">
@@ -61,7 +61,7 @@
 
                     <button
                         type="button"
-                        class="ml-4 py-3 px-3 rounded-md flex items-center justify-center text-gray-400 hover:bg-gray-100 hover:text-gray-500"
+                        class="ltr:ml-4 rtl:mr-4 py-3 px-3 rounded-md flex items-center justify-center text-gray-400 hover:bg-gray-100 hover:text-gray-500"
                     >
                         <fa-icon icon="heart"></fa-icon>
                         <span class="sr-only">Add to favorites</span>
