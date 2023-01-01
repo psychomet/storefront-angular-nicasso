@@ -23,10 +23,10 @@ export class DefaultInterceptor implements HttpInterceptor {
     ) {}
 
     intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-        // req = req.clone({
-        //     headers: req.headers.set('vendure-token', 'u35mxik7b4kycz6y1e6y'),
-        //     params: req.params.set('languageCode','fa')
-        // });
+        req = req.clone({
+            // headers: req.headers.set('vendure-token', 'u35mxik7b4kycz6y1e6y'),
+            params: req.params.set('languageCode','fa')
+        });
 
 
         return next.handle(req).pipe(
