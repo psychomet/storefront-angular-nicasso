@@ -1,6 +1,6 @@
 export const environment = {
     production: true,
-    apiHost: 'http://localhost',
+    apiHost: 'http://185.206.93.60',
     // apiPort: 443,
     apiPort: 3000,
     shopApiPath: 'shop-api',
